@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+}
+h1{
+	text-align: center;
+	margin-top: 10px;
+	}
+.inp{
+	margin-bottom: 10px;
+}
+form{
+	margin: 20px;
+}
+input{
+	max-width: 100px;
+	margin-right: 10px;
+}
+button{
+	display: block;
+	margin: 20px;
+}
+hr{
+	margin: 10px;
+}
+.results{
+	margin: 20px;
+}
+.error{
+	font-weight: bold;
+	color: red;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>SP Breakpoint Calculator</h1>
+		<form id="input">
+			<div class="inp" id="combo">SP Values: 
+				<input type="number">
+				<input type="number">
+				<input type="number">
+				<input type="number">
+				<input type="number">
+				<input type="number">
+				<input type="number">
+			</div>
+			<div class="inp">SP Cost: 
+				<input type="number" id="cost">
+			</div>
+		</form>
+		<button onclick="calculate()">Find Breakpoints</button>
+		<hr>
+		<div class="results">
+			<b>Results:</b>
+			<div id="res"></div>
+		The numbers above are the skill haste % breakpoints (the points at which getting a skill is one hit less then it would be otherwise).<br>There is a list of weapon sp gains on <a href="https://dragalialost.wiki/w/Combat_Mechanics">the wiki</a>. Make sure you have JavaScript enabled in your browser.
+		</div>
+	</body>
+</html>
