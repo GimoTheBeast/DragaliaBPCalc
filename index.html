@@ -2,22 +2,47 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
-		<script src="script.js"></script>
+		
 	</head>
 	<body>
 		<h1>SP Breakpoint Calculator</h1>
+		<button onclick="togglePreset()">Presets</button>
+		<div id="presets">
+			<b>Weapons</b>
+			<ul class="weapons">
+				<li onclick="weaponPreset('sword')"><img src="icons/sword.png"></li>
+				<li onclick="weaponPreset('blade')"><img src="icons/blade.png"></li>
+				<li onclick="weaponPreset('dagger')"><img src="icons/dagger.png"></li>
+				<li onclick="weaponPreset('axe')"><img src="icons/axe.png"></li>
+				<li onclick="weaponPreset('lance')"><img src="icons/lance.png"></li>
+				<li onclick="weaponPreset('bow')"><img src="icons/bow.png"></li>
+				<li onclick="weaponPreset('wand')"><img src="icons/wand.png"></li>
+				<li onclick="weaponPreset('staff')"><img src="icons/staff.png"></li><br>
+				<img src="icons/manacaster.png" style="margin-right: 5px;">
+				<li onclick="weaponPreset('lr')"><img src="icons/lrmc.png"></li>
+				<li onclick="weaponPreset('cr')"><img src="icons/crmc.png"></li>
+				<li onclick="weaponPreset('rf')"><img src="icons/rfmc.png"></li>
+			</ul>
+			<b>Special Character Presets</b>
+				<div id="chars"></div>
+		</div>	
 		<form id="input">
-			<div class="inp" id="combo">SP Values: 
-				<input type="number">
-				<input type="number">
-				<input type="number">
-				<input type="number">
-				<input type="number">
-				<input type="number">
-				<input type="number">
+			<div class="inp" id="combo"><div>SP Values:</div>
+				<input type="number" placeholder="C1 SP">
+				<input type="number" placeholder="C2 SP">
+				<input type="number" placeholder="C3 SP">
+				<input type="number" placeholder="C4 SP">
+				<input type="number" placeholder="C5 SP">
+				<input type="number" placeholder="C6 SP">
+				<input type="number" placeholder="C7 SP">
+				<input type="number" placeholder="C8 SP">
+				<input type="number" placeholder="C9 SP/Infinite" id="infinite">
+			</div>
+			<div class="inp" id="extra">
+			<div style="margin-bottom: 5px;">Force Strike: <input type="checkbox" id="fsc"> <input type="number" placeholder="FS SP" id="fs"> <input type="number" placeholder="Striking Haste %" id="fsh"></div><div class="infobox"><span class="info">Infinite Combo</span><span class="box">Option for characters like Pinon who can repeat the final hit of their custom combo instead of looping back to the start. Also used by Rapid Fire Manacaster characters instead of being slotted into the FS box. Put the SP value in the last box. Ignores FS box.</div>: <input type="checkbox" id="inf"> Skill Refill: <input type="number" id="refill" placeholder="Skill Refill %">
 			</div>
 			<div class="inp">SP Cost: 
-				<input type="number" id="cost">
+				<input type="number" id="cost" placeholder="Skill Cost">
 			</div>
 		</form>
 		<button onclick="calculate()">Find Breakpoints</button>
@@ -25,7 +50,8 @@
 		<div class="results">
 			<b>Results:</b>
 			<div id="res"></div>
-		The numbers above are the skill haste % breakpoints (the points at which getting a skill is one hit less then it would be otherwise).<br>There is a list of weapon sp gains on <a href="https://dragalialost.wiki/w/Combat_Mechanics">the wiki</a>. Make sure you have JavaScript enabled in your browser.
+		The numbers above are the skill haste % breakpoints (the points at which getting a skill is one hit less then it would be otherwise).<br>If a character is not included in the list above and has a unique combo, check the <a href="https://dragalialost.wiki">Wiki</a>. Make sure you have JavaScript enabled in your browser.
+		<script src="script.js"></script>
 		</div>
 	</body>
 </html>
