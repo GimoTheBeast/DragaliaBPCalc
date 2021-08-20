@@ -283,7 +283,7 @@ let calculate = function(){
 				return;
 			}
 			for (let k = 0; k < spArray.length; k++){
-				spIncrease = Math.ceil(Number(spArray[k]) * haste)
+				spIncrease = Math.ceil(Math.fround(Number(spArray[k])) * Math.fround(haste))
 				currentSP = currentSP + spIncrease 
 			}
 			while(currentSP < spCost){
@@ -329,9 +329,10 @@ let calculate = function(){
 				strikeH = haste + strikeHaste
 				while(currentSP < spCost){
 					for (let k = 0; k < spArray.length; k++){
-						spIncrease = Math.ceil(Number(spArray[k]) * haste)
+						spIncrease = Math.ceil(Math.fround(Number(spArray[k])) * Math.fround(haste))
 						currentSP = currentSP + spIncrease
 						curCombo = curCombo + 1;
+						console.log(haste + " " + currentSP + " " + spCost + " " + currentSP >= spCost )
 						if (currentSP >= spCost){
 							if(!breakpoints[0]){
 								breakpoints.push([curCombo,i,fsCount])
@@ -341,11 +342,14 @@ let calculate = function(){
 								if(curCombo < cCheck){
 									breakpoints.push([curCombo,i,fsCount])
 								}
+								else if (fsCount < breakpoints[breakpoints.length - 1][2]){
+									breakpoints.push([curCombo,i,fsCount])
+								}
 							}
 							break;
 						}
-						if (k == spArray.length - 1) {
-							currentSP = currentSP + (strikeSP * strikeH)
+						else if(k == spArray.length - 1) {
+							currentSP = currentSP + Math.ceil(Math.fround(strikeSP) * Math.fround(strikeH))
 							fsCount += 1
 							if (currentSP >= spCost){
 								if(!breakpoints[0]){
@@ -360,6 +364,7 @@ let calculate = function(){
 							}
 							break;
 						}
+						console.log(breakpoints)
 					}
 				}
 			}
@@ -425,7 +430,7 @@ let calculate = function(){
 		
 		while(currentSP < spCost){
 			for (let k = 0; k < spArray.length; k++){
-				spIncrease = Math.ceil(Number(spArray[k]) * haste)
+				spIncrease = Math.ceil(Math.fround(Number(spArray[k])) * Math.fround(haste))
 				currentSP = currentSP + spIncrease
 				curCombo = curCombo + 1;
 				if (currentSP >= spCost){
