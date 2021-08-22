@@ -38,6 +38,10 @@ const comboObj = {
 "gnotte":[200,null,null,null,null,null,null,null,150,null,null,true],
 "gnotteMeta":[300,360,660,null,null,null,null,null,null,null,null,null],
 "faeTobias":[260,260,null,null,null,null,null,null,null,400,null,null],
+"ayachioU1":[130,130,220,360,900,null,null,null,null,200,true,null],
+"ayachioU2":[130,130,220,360,900,null,null,null,null,350,true,null],
+"ayachioP1":[130,130,220,360,900,null,null,null,null,550,true,null],
+"ayachioP2":[130,130,220,360,900,null,null,null,null,750,true,null],
 "gaudric":[150,180,270,285,400,null,null,null,null,300,null,null]
 };
 let charList = ""
