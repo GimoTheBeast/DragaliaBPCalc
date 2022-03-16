@@ -42,7 +42,25 @@ const comboObj = {
 "ayachioU2":[130,130,220,360,900,null,null,null,null,350,true,null],
 "ayachioP1":[130,130,220,360,900,null,null,null,null,550,true,null],
 "ayachioP2":[130,130,220,360,900,null,null,null,null,750,true,null],
-"gaudric":[150,180,270,285,400,null,null,null,null,300,null,null]
+"gaudric":[150,180,270,285,400,null,null,null,null,300,null,null],
+"sleon1":[null,null,null,null,null,null,null,null,null,400,true,null],
+"sleon2":[null,null,null,null,null,null,null,null,null,400,true,null],
+"sleon3":[null,null,null,null,null,null,null,null,null,400,true,null],
+"farren":[205,340,340,545,null,null,null,null,null,288,null,null],
+"gzethia":[130,130,220,360,660,180,240,360,1020,200,null,null],
+"sandy":[520,520,520,520,520,520,520,520,520,580,null,null],
+"sandyHW":[300,360,660,null,null,null,null,null,null,null,null,null],
+"basilC":[400,400,400,430,600,null,null,null,null,400,null,null],
+"basilR":[130,200,240,430,600,null,null,null,null,400,null,null],
+"basilS":[400,400,400,430,600,null,null,null,null,400,null,null],
+"gatovAxe":[150,180,270,285,400,null,null,null,null,300,null,null],
+"gatovSwords":[150,180,250,250,420,420,570,null,null,300,null,null],
+"ayaha":[144,144,264,288,480,null,null,null,null,288,null,null],
+"otoha":[280,336,504,532,588,null,null,null,null,300,null,null],
+"yukimura":[200,null,null,null,null,null,null,null,150,400,null,true],
+"knotte":[460,540,605,null,null,null,null,null,null,650,null,null],
+"knotteMeta":[300,360,660,null,null,null,null,null,null,null,null,null],
+"phares":[290,290,350,350,520,null,null,null,null,600,null,null]
 };
 let charList = ""
 for (let key in comboObj) {
