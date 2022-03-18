@@ -1,6 +1,9 @@
-# DragaliaBPCalc
-A calculator to calculate skill haste breakpoints in Dragalia Lost
-# Explanation of Skill Haste & Breakpoints
+## DragaliaBPCalc
+A calculator to calculate skill haste breakpoints in Dragalia Lost.
+
+You can access the calculator [here](https://gimothebeast.github.io/DragaliaBPCalc/).
+
+## Explanation of Skill Haste & Breakpoints
 Whenever a character does anything that has some form of skill point increase attatched to it (such as performing a combo 
 by tapping or using the character's force strike), their skills/gauge (depending on the character) fill
 by a certain number depending on the attack. You can use the Skill Haste effect to increase the SP gained 
