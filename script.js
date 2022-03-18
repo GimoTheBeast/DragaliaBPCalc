@@ -1,8 +1,9 @@
 let cList = document.querySelectorAll("#combo input");
+let comboObj = {}
 fetch("./presets.json").then(response => {
 	return response.json();
 }).then(output => {
-   	const comboObj = output
+   	comboObj = output
 	let charList = ""
 	for (let key in comboObj) {
 		charList += "<div class=\"character\" onclick=\"charPreset('" + key + "')\"><img src=\"icons/characters/" + key + ".png\"></div>"
