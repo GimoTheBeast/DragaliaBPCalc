@@ -63,7 +63,7 @@ let cList = document.querySelectorAll("#combo input");
 "phares":[290,290,350,350,520,null,null,null,null,600,null,null],
 "sheila":[150,180,250,300,335,335,690,null,null,288,null,null]
 };*/
-const comboObj = fetch("presets.json")
+const comboObj = await fetch("presets.json")
 .then(response => {
    return response.json();
 })
