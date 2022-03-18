@@ -1,5 +1,5 @@
 let cList = document.querySelectorAll("#combo input");
-const comboObj = {
+/*const comboObj = {
 "helly":[180,360,180,720,900,null,null,null,null,400,null,null],
 "megaman":[80,80,80,80,80,null,null,null,null,400,null,null],
 "hsarisse1":[null,null,null,null,null,null,null,null,null,500,true,null],
@@ -60,8 +60,13 @@ const comboObj = {
 "yukimura":[200,null,null,null,null,null,null,null,150,400,null,true],
 "knotte":[460,540,605,null,null,null,null,null,null,650,null,null],
 "knotteMeta":[300,360,660,null,null,null,null,null,null,null,null,null],
-"phares":[290,290,350,350,520,null,null,null,null,600,null,null]
-};
+"phares":[290,290,350,350,520,null,null,null,null,600,null,null],
+"sheila":[150,180,250,300,335,335,690,null,null,288,null,null]
+};*/
+const comboObj = fetch("./presets.json")
+.then(response => {
+   return response.json();
+})
 let charList = ""
 for (let key in comboObj) {
 	charList += "<div class=\"character\" onclick=\"charPreset('" + key + "')\"><img src=\"icons/characters/" + key + ".png\"></div>"
