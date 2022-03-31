@@ -63,5 +63,8 @@
 "phares":[290,290,350,350,520,null,null,null,null,600,null,null],
 "sheila":[150,180,250,300,335,335,690,null,null,288,null,null],
 "gnedrick":[225,300,225,400,600,null,null,null,null,345,null,null],
-"origa":[130,200,400,430,600,null,null,null,null,400,null,null]
+"origa":[130,200,400,430,600,null,null,null,null,400,null,null],
+"beuden":[150,150,260,320,400,null,null,null,null,285,null,null],
+"beudenC4FS":[150,150,260,320,400,null,null,null,null,400,true,null],
+"bzethia":[180,270,270,310,425,null,null,null,null,400,null,null]
 }
