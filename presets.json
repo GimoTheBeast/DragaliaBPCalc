@@ -66,6 +66,7 @@
 "knotte":[460,540,605,null,null,null,null,null,null,650,null,null],
 "knotteMeta":[300,360,660,null,null,null,null,null,null,null,null,null],
 "phares":[290,290,350,350,520,null,null,null,null,600,null,null],
+"hzodiark":[340,340,680,null,null,null,null,null,null,345,null,null],
 "sheila":[150,180,250,300,335,335,690,null,null,288,null,null],
 "gnedrick":[225,300,225,400,600,null,null,null,null,345,null,null],
 "origa":[130,200,400,430,600,null,null,null,null,400,null,null],
